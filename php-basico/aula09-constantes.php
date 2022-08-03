@@ -1,6 +1,6 @@
 <?php
 /* CONSTANTES */
-define("carros", ["fusca", "gol", "uno"]); // define - Define uma constante
+define("carros", ["fusca", "gol", "uno"]);
 
 function teste(){
     echo carros[1];
