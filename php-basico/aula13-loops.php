@@ -44,5 +44,5 @@ for ($num3 = 0; $num3 <= 10; $num3++){
 $colors = ["azul", "amarelo", "verde", "vermelho"];
 
 foreach ($colors as $color){
-    echo "A coe é $color <br>";
+    echo "A cor é $color <br>";
 }
