@@ -8,7 +8,7 @@ if (
     !empty($_POST['email']) &&
     !empty($_POST['password'])
 ) {
-    include_once('../cadastro/config.php');
+    include_once('../db/config.php');
     $email = $_POST['email'];
     $password = $_POST['password'];
 

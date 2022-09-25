@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 
   echo $name, $email, $password, $telephone, $gender, $birthday, $city, $state, $address;
 
-  include_once('config.php');
+  include_once('../db/config.php');
 
   $sql = "INSERT INTO usuarios (nome, email, senha, telefone, sexo, data_nasc, cidade, estado, endereco) VALUES ('$name', '$email', '$password', '$telephone', '$gender', '$birthday', '$city', '$state', '$address')";
   $result = mysqli_query($connect, $sql);
@@ -25,7 +25,6 @@ if (isset($_POST['submit'])) {
   print_r($result);
 
   header('location: ../login');
-
 }
 
 ?>
@@ -42,7 +41,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-<a href="../home.php">Voltar</a>
+  <a href="../home.php">Voltar</a>
   <div class="box">
     <form action="" method="POST">
       <fieldset>
@@ -70,7 +69,7 @@ if (isset($_POST['submit'])) {
         <label for="female">Feminino</label><br>
         <input type="radio" id="male" name="gender" value="masculino" required>
         <label for="male">Masculino</label><br>
-        <input type="radio" id="other" name="gender" value="other" required>
+        <input type="radio" id="other" name="gender" value="outro" required>
         <label for="other">Outro</label>
         <br><br>
         <label for="birthday"><strong>Data de Nascimento</strong></label>

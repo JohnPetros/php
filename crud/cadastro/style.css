@@ -55,7 +55,7 @@ legend {
   background: none;
   border: none;
   border-bottom: 1px solid white;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .labelInput {
@@ -82,7 +82,8 @@ legend {
   font-size: 15px;
 }
 
-#submit {
+#submit,
+#update {
   background: dodgerblue;
   width: 100%;
   border: none;
@@ -93,6 +94,7 @@ legend {
   font-weight: bold;
 }
 
-#submit:hover {
+#submit:hover,
+#update:hover {
   background: rgb(29, 120, 212);
 }
