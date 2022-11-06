@@ -36,7 +36,7 @@ class Login
     }
 }
 
-$logar = new Login();
+// $logar = new Login();
 $logar->setEmail("teste/()@teste.com");
 $logar->setSenha("123456");
 $logar->Logar();
